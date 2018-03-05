@@ -6,13 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PublicTestController {
 	
-//	@RequestMapping("/publictest/goapplybooth")
-//	public String goApplyBooth(){
-//		return "publictest/apply-booth";
-//	}
 	
 	@RequestMapping("/")
 	public String goIndex(){
+		return "index";
+	}
+	
+	@RequestMapping("/index")
+	public String goIndex2(){
 		return "index";
 	}
 	

@@ -7,6 +7,8 @@
 
 
 	<context:annotation-config></context:annotation-config>
+	
+	<!-- 
 	<context:component-scan base-package="com.adogo.business.service">
 	</context:component-scan>
 	<context:component-scan base-package="com.adogo.event.service">
@@ -23,4 +25,5 @@
 	</context:component-scan>
 	<context:component-scan base-package="com.athensoft.common.email.service">
 	</context:component-scan>
+	 -->
 </beans>

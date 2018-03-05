@@ -7,6 +7,7 @@
 
 
 	<context:annotation-config></context:annotation-config>
+	<!-- 
 	<context:component-scan base-package="com.adogo.business.dao">
 	</context:component-scan>
 	<context:component-scan base-package="com.adogo.event.dao">
@@ -21,4 +22,5 @@
 	</context:component-scan>
 	<context:component-scan base-package="com.adogo.support.dao">
 	</context:component-scan>
+	 -->
 </beans>
