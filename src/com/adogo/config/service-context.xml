@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+
+	<context:annotation-config></context:annotation-config>
+	<context:component-scan base-package="com.adogo.business.service">
+	</context:component-scan>
+	<context:component-scan base-package="com.adogo.event.service">
+	</context:component-scan>
+	<context:component-scan base-package="com.adogo.uaas.service">
+	</context:component-scan>
+	<context:component-scan base-package="com.adogo.upcs.service">
+	</context:component-scan>
+	<context:component-scan base-package="com.adogo.blog.service">
+	</context:component-scan>
+	<context:component-scan base-package="com.adogo.ad.service">
+	</context:component-scan>
+	<context:component-scan base-package="com.adogo.support.service">
+	</context:component-scan>
+	<context:component-scan base-package="com.athensoft.common.email.service">
+	</context:component-scan>
+</beans>
