@@ -13,12 +13,12 @@
         <meta name="keywords" content=""/>
         <meta name="description" content=""/>
         <!--=============== css  ===============-->
-        <link type="text/css" rel="stylesheet" href="css/reset.css">
-        <link type="text/css" rel="stylesheet" href="css/plugins.css">
-        <link type="text/css" rel="stylesheet" href="css/style.css">
-        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <link type="text/css" rel="stylesheet" href="/css/reset.css">
+        <link type="text/css" rel="stylesheet" href="/css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="/css/style.css">
+        <link type="text/css" rel="stylesheet" href="/css/color.css">
         <!--=============== favicons ===============-->
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="/images/favicon.ico">
     </head>
     <body>
         <!--loader-->
@@ -77,6 +77,16 @@
                                     </ul>
                                     <!--second level end-->
                                 </li>
+                                
+                                <li>
+                                    <a href="#">Booth <i class="fa fa-caret-down"></i></a>
+                                    <!--second level -->
+                                    <ul>
+                                        <li><a href="/booth/list">All</a></li>
+                                    </ul>
+                                    <!--second level end-->
+                                </li>
+                                
                                 <li>
                                     <a href="#">Listings <i class="fa fa-caret-down"></i></a>
                                     <!--second level -->
@@ -135,7 +145,7 @@
                 <div class="content">
                     <!--section -->
                     <section class="scroll-con-sec hero-section" data-scrollax-parent="true" id="sec1">
-                        <div class="bg"  data-bg="images/bg/1.jpg" data-scrollax="properties: { translateY: '200px' }"></div>
+                        <div class="bg"  data-bg="images/slide/slide-2.jpg" data-scrollax="properties: { translateY: '200px' }"></div>
                         <div class="overlay"></div>
                         <div class="hero-section-wrap fl-wrap">
                             <div class="container">
@@ -812,7 +822,7 @@
                                 <div class="col-md-4">
                                     <article class="card-post">
                                         <div class="card-post-img fl-wrap">
-                                            <a href="blog-single.html"><img  src="images/all/1.jpg"   alt=""></a>
+                                            <a href="blog-single.html"><img  src="/images/all/1.jpg"   alt=""></a>
                                         </div>
                                         <div class="card-post-content fl-wrap">
                                             <h3><a href="blog-single.html">Video and gallery post</a></h3>
@@ -1046,8 +1056,8 @@
         </div>
         <!-- Main end -->
         <!--=============== scripts  ===============-->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/plugins.js"></script>
+        <script type="text/javascript" src="/js/scripts.js"></script>
     </body>
 </html>

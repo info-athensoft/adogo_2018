@@ -22,4 +22,8 @@ public class PublicTestController {
 		return "test";
 	}
 	
+	@RequestMapping("/booth/list")
+	public String goBoothList(){
+		return "booth_list";
+	}
 }
