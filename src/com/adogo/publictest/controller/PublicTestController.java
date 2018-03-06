@@ -24,6 +24,6 @@ public class PublicTestController {
 	
 	@RequestMapping("/booth/list")
 	public String goBoothList(){
-		return "booth_list";
+		return "booth/booth_list";
 	}
 }

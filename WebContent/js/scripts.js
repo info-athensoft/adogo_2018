@@ -160,7 +160,9 @@ function initCitybook() {
     $('.listing-carousel').slick({
         infinite: true,
         slidesToShow: 5,
-        dots: true,
+        autoplay: true,				/* athens */
+        autoplaySpeed: 5000,		/* athens */
+        dots: false,				/* athens */
         arrows: false,
         centerMode: true,
         centerPadding: '0',
