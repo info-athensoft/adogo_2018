@@ -61,59 +61,235 @@
                     </section>
                     <!-- section end -->
                     <!--section -->
-                    <section  id="sec2">
+                    <section  id="sec1">
                         <div class="container">
                             <div class="section-title">
                                 <h2> Basic Life Needs</h2>
+                                
                                 <div class="section-subtitle">popular questions</div>
-                                 <!--
                                 <span class="section-separator"></span>
                                 <p>Explore some of the best tips from around the city from our partners and friends.</p>
-                                 -->
+                                
                             </div>
                             
                             <!-- features-box-container --> 
                             <div class="features-box-container fl-wrap row">
-                                <!--features-box --> 
                                 <div class="features-box col-md-3">
                                     <div class="time-line-icon">
                                         <i class="fa fa-medkit"></i>
                                     </div>
                                     <h3>Clothing</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.  </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                 </div>
-                                <!-- features-box end  --> 
-                                <!--features-box --> 
                                 <div class="features-box col-md-3">
                                     <div class="time-line-icon">
                                         <i class="fa fa-cogs"></i>
                                     </div>
                                     <h3>Diet</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.  </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                 </div>
-                                <!-- features-box end  --> 
-                                <!--features-box --> 
                                 <div class="features-box col-md-3">
                                     <div class="time-line-icon">
                                         <i class="fa fa-television"></i>
                                     </div>
                                     <h3>Housing</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.  </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                 </div>
-                                <!-- features-box end  --> 
-                                 <!--features-box --> 
                                 <div class="features-box col-md-3">
                                     <div class="time-line-icon">
                                         <i class="fa fa-television"></i>
                                     </div>
                                     <h3>Traveling</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.  </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                 </div>
-                                <!-- features-box end  -->                                                  
+                                
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Medical</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Education</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Work</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Shopping</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
                             </div>
                             <!-- features-box-container end  --> 
                         </div>
                     </section>
+                    
+                    
+                    
+                    <section  id="sec2">
+                        <div class="container">
+                            <div class="section-title">
+                                <h2> Quality Life Needs</h2>
+                                <div class="section-subtitle">popular questions</div>
+                                <span class="section-separator"></span>
+                                <p>Explore some of the best tips from around the city from our partners and friends.</p>
+                            </div>
+                            
+                            <!-- features-box-container --> 
+                            <div class="features-box-container fl-wrap row">
+                                
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Health</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-cogs"></i>
+                                    </div>
+                                    <h3>Beauty</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Fitness</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Sport</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Entertainment</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Art</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Collection</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-medkit"></i>
+                                    </div>
+                                    <h3>Funeral</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                            </div>
+                            <!-- features-box-container end  --> 
+                        </div>
+                    </section>
+                   
+                   
+                   
+                   <section  id="sec3">
+                        <div class="container">
+                            <div class="section-title">
+                                <h2> Needs for Relationship</h2>
+                                <div class="section-subtitle">popular questions</div>
+                                <span class="section-separator"></span>
+                                <p>Explore some of the best tips from around the city from our partners and friends.</p>
+                            </div>
+                            
+                            <!-- features-box-container --> 
+                            <div class="features-box-container fl-wrap row">
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-medkit"></i>
+                                    </div>
+                                    <h3>Wedding</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Spouse</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-cogs"></i>
+                                    </div>
+                                    <h3>Parents</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Children</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Relatives</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Pets</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Friends</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="features-box col-md-3">
+                                    <div class="time-line-icon">
+                                        <i class="fa fa-television"></i>
+                                    </div>
+                                    <h3>Others</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                            </div>
+                            <!-- features-box-container end  --> 
+                        </div>
+                    </section>
+                   
+                   
                     <section class="parallax-section" data-scrollax-parent="true">
                         <div class="bg"  data-bg="/images/bg/1.jpg" data-scrollax="properties: { translateY: '100px' }"></div>
                         <div class="overlay co lor-overlay"></div>
