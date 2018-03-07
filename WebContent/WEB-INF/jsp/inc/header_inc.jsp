@@ -40,6 +40,9 @@
                     <li>
                         <a href="/index" class="act-link">Home <i class="fa fa-caret-down"></i></a>
                         <!--second level -->
+                        	<ul>
+	                            <li><a href="/category/list">Browse categories</a></li>
+	                        </ul>
                         <!--second level end-->
                     </li>
                     

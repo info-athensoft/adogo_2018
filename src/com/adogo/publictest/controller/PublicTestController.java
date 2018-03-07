@@ -26,4 +26,9 @@ public class PublicTestController {
 	public String goBoothList(){
 		return "booth/booth_list";
 	}
+	
+	@RequestMapping("/category/list")
+	public String goCategoryList(){
+		return "category/category_list";
+	}
 }
