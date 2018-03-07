@@ -115,7 +115,7 @@
                         </div>
                     </section>
                     <section class="parallax-section" data-scrollax-parent="true">
-                        <div class="bg"  data-bg="images/bg/1.jpg" data-scrollax="properties: { translateY: '100px' }"></div>
+                        <div class="bg"  data-bg="/images/bg/1.jpg" data-scrollax="properties: { translateY: '100px' }"></div>
                         <div class="overlay co lor-overlay"></div>
                         <!--container-->
                         <div class="container">
@@ -128,7 +128,7 @@
                     </section>
                     <section class="gradient-bg">
                         <div class="cirle-bg">
-                            <div class="bg" data-bg="images/bg/circle.png"></div>
+                            <div class="bg" data-bg="/images/bg/circle.png"></div>
                         </div>
                         <div class="container">
                             <div class="join-wrap fl-wrap">
