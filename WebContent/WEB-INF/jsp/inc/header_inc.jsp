@@ -5,7 +5,7 @@
 <header class="main-header dark-header fs-header sticky">
     <div class="header-inner">
         <div class="logo-holder">
-            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <a href="/index"><img src="/images/logo.png" alt=""></a>
         </div>
         <div class="header-search vis-header-search">
             <div class="header-search-input-item">
@@ -14,10 +14,9 @@
             <div class="header-search-select-item">
                 <select data-placeholder="All Categories" class="chosen-select" >
                     <option>All Categories</option>
-                    <option>Shops</option>
-                    <option>Hotels</option>
-                    <option>Restaurants</option>
-                    <option>Fitness</option>
+                    <option>Business booths</option>
+                    <option>Website booths</option>
+                    <option>Social media</option>
                     <option>Events</option>
                 </select>
             </div>
@@ -53,6 +52,18 @@
                             <li><a href="/booth/list">Business booths</a></li>
                             <li><a href="#">Website booths</a></li>
                             <li><a href="#">Social media booths</a></li>
+                        </ul>
+                        <!--second level end-->
+                    </li>
+                    
+                    <li>
+                        <a href="#">iAds <i class="fa fa-caret-down"></i></a>
+                        <!--second level -->
+                        <ul>
+                        	<li><a href="#">Commercial Ads</a></li>
+                        	<li><a href="#">Boost Website</a></li>
+                        	<li><a href="#">Boost Social Media</a></li>
+                        	<li><a href="#">Boost Ideas</a></li>
                         </ul>
                         <!--second level end-->
                     </li>

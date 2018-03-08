@@ -46,7 +46,7 @@
                 <div class="content">
                     <!--section -->
                     <section class="scroll-con-sec hero-section" data-scrollax-parent="true" id="sec1">
-                        <div class="bg"  data-bg="images/slide/slide-2.jpg" data-scrollax="properties: { translateY: '200px' }"></div>
+                        <div class="bg"  data-bg="/images/slide/slide-2.jpg" data-scrollax="properties: { translateY: '200px' }"></div>
                         <div class="overlay"></div>
                         <div class="hero-section-wrap fl-wrap">
                             <div class="container">
@@ -107,16 +107,16 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/edu-01.jpg" alt="">
+                                                <img src="/images/booth/edu-01.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>4</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Retail</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
                                                 </div>
-                                                <h3><a href="listing-single.html">Event in City Mol</a></h3>
+                                                <h3><a href="/booth/style/1">Booth Style 1</a></h3>
                                                 <p>Sed interdum metus at nisi tempor laoreet.  </p>
                                                 <div class="geodir-category-options fl-wrap">
                                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
@@ -136,7 +136,7 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/edu-02.jpg" alt="">
+                                                <img src="/images/booth/edu-02.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>15</span><i class="fa fa-heart"></i></div>
                                             </div>
@@ -145,7 +145,7 @@
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
                                                 </div>
-                                                <h3><a href="listing-single.html">Cafe "Lollipop"</a></h3>
+                                                <h3><a href="/booth/style/2">Booth Style 2</a></h3>
                                                 <p>Morbi suscipit erat in diam bibendum rutrum in nisl.</p>
                                                 <div class="geodir-category-options fl-wrap">
                                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="4">
@@ -165,7 +165,7 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/edu-vvintlgroup.jpg" alt="">
+                                                <img src="/images/booth/edu-vvintlgroup.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>13</span><i class="fa fa-heart"></i></div>
                                             </div>
@@ -174,7 +174,7 @@
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                                 </div>
-                                                <h3><a href="listing-single.html">Gym In Brooklyn</a></h3>
+                                                <h3><a href="/booth/style/3">Booth Style 3</a></h3>
                                                 <p>Morbiaccumsan ipsum velit tincidunt . </p>
                                                 <div class="geodir-category-options fl-wrap">
                                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="3">
@@ -194,7 +194,7 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/food-02.jpg" alt="">
+                                                <img src="/images/booth/food-02.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>3</span><i class="fa fa-heart"></i></div>
                                             </div>
@@ -203,7 +203,7 @@
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                                 </div>
-                                                <h3><a href="listing-single.html">Shop in Boutique Zone</a></h3>
+                                                <h3><a href="/booth/style/3">Booth Style 3</a></h3>
                                                 <p>Morbiaccumsan ipsum velit tincidunt . </p>
                                                 <div class="geodir-category-options fl-wrap">
                                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="4">
@@ -223,7 +223,7 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/food-bonheur.jpg" alt="">
+                                                <img src="/images/booth/food-bonheur.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>35</span><i class="fa fa-heart"></i></div>
                                             </div>

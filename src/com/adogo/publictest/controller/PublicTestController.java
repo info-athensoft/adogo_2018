@@ -1,6 +1,7 @@
 package com.adogo.publictest.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -25,6 +26,11 @@ public class PublicTestController {
 	@RequestMapping("/booth/list")
 	public String goBoothList(){
 		return "booth/booth_list";
+	}
+	
+	@RequestMapping("/booth/style/{styleNo}")
+	public String goBoothStyle1(@PathVariable int styleNo){
+		return "booth/booth_style_"+styleNo;
 	}
 	
 	@RequestMapping("/category/list")
