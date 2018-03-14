@@ -142,7 +142,7 @@
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Event</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
                                                 </div>
                                                 <h3><a href="/booth/style/2">Booth Style 2</a></h3>
@@ -171,7 +171,7 @@
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Gym </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                                 </div>
                                                 <h3><a href="/booth/style/3">Booth Style 3</a></h3>
@@ -200,7 +200,7 @@
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Shops</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                                 </div>
                                                 <h3><a href="/booth/style/3">Booth Style 3</a></h3>
@@ -229,7 +229,7 @@
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Cars</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Kliff Antony</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.html">Best deal For the Cars</a></h3>
@@ -252,13 +252,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/food-muyuyan.jpg" alt="">
+                                                <img src="/images/booth/food-muyuyan.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>553</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Restourants</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Adam Koncy</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.html">Luxury Restourant</a></h3>
@@ -314,7 +314,7 @@
                                 <div class="gallery-item gallery-item-second">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="images/bg/19.jpg"   alt="">
+                                            <img src="/images/bg/19.jpg"   alt="">
                                             <div class="listing-counter"><span>6 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.html">Cafe - Pub</a></h3>
@@ -328,7 +328,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="images/all/1.jpg"   alt="">
+                                            <img  src="/images/all/1.jpg"   alt="">
                                             <div class="listing-counter"><span>21 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.html">Gym - Fitness</a></h3>
@@ -342,7 +342,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="images/all/1.jpg"   alt="">
+                                            <img  src="/images/all/1.jpg"   alt="">
                                             <div class="listing-counter"><span>7 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.html">Hotels</a></h3>
@@ -356,7 +356,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="images/all/1.jpg"   alt="">
+                                            <img  src="/images/all/1.jpg"   alt="">
                                             <div class="listing-counter"><span>15 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.html">Shop - Store</a></h3>
@@ -393,13 +393,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/edu-01.jpg" alt="">
+                                                <img src="/images/booth/edu-01.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>4</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Retail</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.html">Event in City Mol</a></h3>
@@ -422,13 +422,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/edu-02.jpg" alt="">
+                                                <img src="/images/booth/edu-02.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>15</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Event</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.html">Cafe "Lollipop"</a></h3>
@@ -451,13 +451,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/edu-vvintlgroup.jpg" alt="">
+                                                <img src="/images/booth/edu-vvintlgroup.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>13</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Gym </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.html">Gym In Brooklyn</a></h3>
@@ -480,13 +480,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/food-02.jpg" alt="">
+                                                <img src="/images/booth/food-02.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>3</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Shops</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.html">Shop in Boutique Zone</a></h3>
@@ -509,13 +509,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/food-bonheur.jpg" alt="">
+                                                <img src="/images/booth/food-bonheur.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>35</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Cars</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Kliff Antony</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.html">Best deal For the Cars</a></h3>
@@ -538,13 +538,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/booth/food-muyuyan.jpg" alt="">
+                                                <img src="/images/booth/food-muyuyan.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>553</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Restourants</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Adam Koncy</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.html">Luxury Restourant</a></h3>
@@ -578,7 +578,7 @@
                                 <div class="col-md-6">
                                     <div class="images-collage fl-wrap">
                                         <!-- <div class="images-collage-title">City<span>Book</span></div>  -->
-                                        <div class="images-collage-main images-collage-item"><img src="images/goal/concept1.jpg" alt=""></div>
+                                        <div class="images-collage-main images-collage-item"><img src="/images/goal/concept1.jpg" alt=""></div>
                                         <div class="images-collage-other images-collage-item" data-position-left="48" data-position-top="-10" data-zindex="2"><img src="images/goal/behavior1.jpg" alt=""></div>
                                         <div class="images-collage-other images-collage-item" data-position-left="23" data-position-top="10" data-zindex="2"><img src="images/goal/behavior1.jpg" alt=""></div>
                                         <div class="images-collage-other images-collage-item" data-position-left="68" data-position-top="45" data-zindex="15"><img src="images/goal/behavior2.jpg" alt=""></div>

@@ -5,8 +5,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class PublicTestController {
+public class TestPublicController {
 	
+	@RequestMapping("/test")
+	public String goTest(){
+		return "test";
+	}
 	
 	@RequestMapping("/")
 	public String goIndex(){
@@ -16,12 +20,6 @@ public class PublicTestController {
 	@RequestMapping("/index")
 	public String goIndex2(){
 		return "index";
-	}
-	
-	@RequestMapping("/test")
-	public String goTest(){
-		
-		return "test";
 	}
 	
 	@RequestMapping("/booth/list")
