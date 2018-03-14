@@ -39,7 +39,25 @@
 				  classpath:com/adogo/config/email-config.properties"
 	/>	
 	
-	<!-- Database connection -->	 
+	<!-- Database connection -->
+	
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="${jdbc.driver}"></property>
+		<property name="jdbcUrl" value="${jdbc.url}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+		<property name="user" value="${jdbc.username}"></property>
+		<property name="minPoolSize" value="5"/>
+		<property name="maxPoolSize" value="30"/>
+		<property name="initialPoolSize" value="10"/>
+		<property name="maxIdleTime" value="600"/>
+		<property name="acquireRetryAttempts" value="30" />
+		<property name="breakAfterAcquireFailure" value="true" />
+		<property name="maxStatements" value="0" />
+		<property name="acquireIncrement" value="5"/>
+        <property name="idleConnectionTestPeriod" value="60" />   
+	</bean>
+	
+	<!-- 	 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="${jdbc.driver}"></property>
 		<property name="url" value="${jdbc.url}"></property>
@@ -55,6 +73,7 @@
         <property name="testOnBorrow" value="true"/>
     	<property name="validationQuery" value="SELECT 1"/>
 	</bean>
+	 -->
 	
 	<!-- 
 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">

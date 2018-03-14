@@ -20,6 +20,7 @@ public class PublicTestController {
 	
 	@RequestMapping("/test")
 	public String goTest(){
+		
 		return "test";
 	}
 	
@@ -37,4 +38,6 @@ public class PublicTestController {
 	public String goCategoryList(){
 		return "category/category_list";
 	}
+	
+	
 }
