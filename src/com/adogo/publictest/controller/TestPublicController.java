@@ -27,11 +27,6 @@ public class TestPublicController {
 		return "booth/booth_list";
 	}
 	
-	@RequestMapping("/booth/list_map")
-	public String goBoothListMap(){
-		return "booth/booth_list_map";
-	}
-	
 	@RequestMapping("/booth/style/{styleNo}")
 	public String goBoothStyle1(@PathVariable int styleNo){
 		return "booth/booth_style_"+styleNo;

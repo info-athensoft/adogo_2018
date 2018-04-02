@@ -1,6 +1,9 @@
 <%@ page contentType="text/html; charset=utf-8" %>
 <%@ page pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <!-- global variables settings -->
 <c:set var="webapp_name" value="/"/>
@@ -128,7 +131,9 @@
                         <div class="list-main-wrap fl-wrap card-listing">
                             <a class="custom-scroll-link back-to-filters btf-l" href="#lisfw"><i class="fa fa-angle-double-up"></i><span>Back to Filters</span></a> 
                             <div class="container">
-                                <!-- listing-item -->
+                            
+                            <c:forEach var="booth" items="${boothList}">
+                            	<!-- listing-item -->
                                 <div class="listing-item">
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img">
@@ -137,155 +142,24 @@
                                             <div class="list-post-counter"><span>4</span><i class="fa fa-heart"></i></div>
                                         </div>
                                         <div class="geodir-category-content fl-wrap">
-                                            <a class="listing-geodir-category" href="listing.html">Restourants</a>
+                                            <a class="listing-geodir-category" href="listing.html">${categoryMap.get(booth.categoryNo)}</a>
                                                         <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                 <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
                                             </div>
-                                            <h3><a href="listing-single.html">Luxury Restourant</a></h3>
-                                            <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales, sed lobortis est placerat.</p>
+                                            <h3><a href="listing-single.html">${booth.bizName}</a></h3>
+                                            <p>${booth.bizDesc}</p>
                                             <div class="geodir-category-options fl-wrap">
                                                 <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
-                                                    <span>(7 reviews)</span>
+                                                    <span>(${booth.visitNum} reviews)</span>
                                                 </div>
-                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <!-- listing-item end-->                           
-                                <!-- listing-item -->
-                                <div class="listing-item">
-                                    <article class="geodir-category-listing fl-wrap">
-                                        <div class="geodir-category-img">
-                                                        <img src="/images/booth/edu-01.jpg" alt="">
-                                            <div class="overlay"></div>
-                                            <div class="list-post-counter"><span>15</span><i class="fa fa-heart"></i></div>
-                                        </div>
-                                        <div class="geodir-category-content fl-wrap">
-                                            <a class="listing-geodir-category" href="listing.html">Event</a>
-                                                        <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
-                                                <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
-                                            </div>
-                                            <h3><a href="listing-single.html">Event In City Mol</a></h3>
-                                            <p>Morbi suscipit erat in diam bibendum rutrum in nisl. Aliquam et purus ante.</p>
-                                            <div class="geodir-category-options fl-wrap">
-                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="4">
-                                                    <span>(17 reviews)</span>
-                                                </div>
-                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <!-- listing-item end-->  
-                                            
-                                <div class="clearfix"></div>
-                                            
-                                <!-- listing-item -->
-                                <div class="listing-item">
-                                    <article class="geodir-category-listing fl-wrap">
-                                        <div class="geodir-category-img">
-                                                        <img src="/images/booth/edu-01.jpg" alt="">
-                                            <div class="overlay"></div>
-                                            <div class="list-post-counter"><span>553</span><i class="fa fa-heart"></i></div>
-                                        </div>
-                                        <div class="geodir-category-content fl-wrap">
-                                            <a class="listing-geodir-category" href="listing.html">Restourants</a>
-                                                        <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
-                                                <span class="avatar-tooltip">Added By  <strong>Adam Koncy</strong></span>
-                                            </div>
-                                            <h3><a href="listing-single.html">Luxury Restourant</a></h3>
-                                            <p>Sed non neque elit. Sed ut imperdie.</p>
-                                            <div class="geodir-category-options fl-wrap">
-                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
-                                                    <span>(7 reviews)</span>
-                                                </div>
-                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <!-- listing-item end-->                              
-                                                                         
-                                <!-- listing-item -->
-                                <div class="listing-item">
-                                    <article class="geodir-category-listing fl-wrap">
-                                        <div class="geodir-category-img">
-                                                        <img src="/images/booth/edu-01.jpg" alt="">
-                                            <div class="overlay"></div>
-                                            <div class="list-post-counter"><span>47</span><i class="fa fa-heart"></i></div>
-                                        </div>
-                                        <div class="geodir-category-content fl-wrap">
-                                            <a class="listing-geodir-category" href="listing.html">Fitness</a>
-                                                        <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
-                                                <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
-                                            </div>
-                                            <h3><a href="listing-single.html">Gym in the Center</a></h3>
-                                            <p>Mauris in erat justo. Nullam ac urna eu. </p>
-                                            <div class="geodir-category-options fl-wrap">
-                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
-                                                    <span>(23 reviews)</span>
-                                                </div>
-                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
+                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>${addressMap.get(booth.bizId)}</a></div>
                                             </div>
                                         </div>
                                     </article>
                                 </div>
                                 <!-- listing-item end-->
-                                            
-                                <div class="clearfix"></div>
-                                            
-                                <!-- listing-item -->
-                                <div class="listing-item">
-                                    <article class="geodir-category-listing fl-wrap">
-                                        <div class="geodir-category-img">
-                                                        <img src="/images/booth/edu-01.jpg" alt="">
-                                            <div class="overlay"></div>
-                                            <div class="list-post-counter"><span>3</span><i class="fa fa-heart"></i></div>
-                                        </div>
-                                        <div class="geodir-category-content fl-wrap">
-                                            <a class="listing-geodir-category" href="listing.html">Shops</a>
-                                                        <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
-                                                <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
-                                            </div>
-                                            <h3><a href="listing-single.html">Shop in Boutique Zone</a></h3>
-                                            <p>Morbiaccumsan ipsum velit tincidunt . </p>
-                                            <div class="geodir-category-options fl-wrap">
-                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="4">
-                                                    <span>(6 reviews)</span>
-                                                </div>
-                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <!-- listing-item end-->                              
-                                                                          
-                                <!-- listing-item -->
-                                <div class="listing-item">
-                                    <article class="geodir-category-listing fl-wrap">
-                                        <div class="geodir-category-img">
-                                                        <img src="/images/booth/edu-01.jpg" alt="">
-                                            <div class="overlay"></div>
-                                            <div class="list-post-counter"><span>35</span><i class="fa fa-heart"></i></div>
-                                        </div>
-                                        <div class="geodir-category-content fl-wrap">
-                                            <a class="listing-geodir-category" href="listing.html">Hotels</a>
-                                                        <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
-                                                <span class="avatar-tooltip">Added By  <strong>Kliff Antony</strong></span>
-                                            </div>
-                                            <h3><a href="listing-single.html">Luxary Hotel</a></h3>
-                                            <p>Lorem ipsum gravida nibh vel velit.</p>
-                                            <div class="geodir-category-options fl-wrap">
-                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
-                                                    <span>(11 reviews)</span>
-                                                </div>
-                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <!-- listing-item end-->                   
+                         </c:forEach>
+                  
                             </div>
                             <a class="load-more-button" href="#">Load more <i class="fa fa-circle-o-notch"></i> </a>  
                         </div>
@@ -330,7 +204,93 @@
         <script type="text/javascript" src="/js/scripts.js"></script>   
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo"></script>
         <script type="text/javascript" src="/js/map_infobox.js"></script>
-        <script type="text/javascript" src="/js/markerclusterer.js"></script>  
+        <script type="text/javascript" src="/js/markerclusterer.js"></script>
+        
+        <script type="text/javascript">
+        var locations = new Array();
+        var i=0;
+      //Function to covert address to Latitude and Longitude
+        var getLocation =  function(address) {
+    	  //var location = new Array();
+          var geocoder = new google.maps.Geocoder();
+          geocoder.geocode( { 'address': address}, function(results, status) {
+        	  //locations = [[]];
+          if (status == google.maps.GeocoderStatus.OK) {
+              var latitude = results[0].geometry.location.lat();
+              var longitude = results[0].geometry.location.lng();
+              //alert("address:"+address+" latitude:"+latitude+" longitude:"+longitude);
+              //locations[i].push([latitude,longitude]);
+              //locations[i] = new Array();
+              //locations[i][0] = latitude;
+              //locations[i][1] = longitude;
+              locations.push(new Array(latitude,longitude));
+              //alert("address:"+address+" locations="+locations);
+              //locations[i] = [latitude,longitude];
+              i++;
+              //alert("address:"+address+" location[0]:"+location[0]+" location[1]:"+location[1]);
+              //return location;
+              }
+          else {
+        	  alert("status="+status);
+        	//return ([0,0]);
+        	//  location[0] = 0;
+            //  location[1] = 0;
+            locations.push(new Array(0,0));
+        	//locations[i][0] = 0;
+            //locations[i][1] = 0;
+            //locations[i] = [0,0];
+            i++;
+          }
+          //return location;
+          });
+        }
+        //alert("locations="+locations);
+        getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
+               
+        getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
+                getLocation("160 Saint Laurent O., MONTREAL, QUEBEC,  H2A 1R9");
+                
+                getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
+        getLocation("160 Saint Laurent O., MONTREAL, QUEBEC,  H2A 1R9");
+        getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
+        getLocation("160 Saint Laurent O., MONTREAL, QUEBEC,  H2A 1R9");
+        //getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
+        //getLocation("101 Sherbrook O., MONTREAL, QUEBEC,  H2B 1N2"); 
+        //alert("locations="+locations);
+/*       alert("addr1[0]="+addr1[0]+" addr1[1]="+addr1[1]);
+        alert("addr2[0]="+addr2[0]+" addr2[1]="+addr2[1]);
+        alert("addr3[0]="+addr3[0]+" addr3[1]="+addr3[1]);
+        alert("addr4[0]="+addr4[0]+" addr4[1]="+addr4[1]);
+        //var locations = new Array();
+locations[0]=new Array(addr1);
+locations[1]=new Array(addr2);
+locations[2]=new Array(addr3);
+locations[3]=new Array(addr4);
+locations[4]=new Array(addr5);
+locations[5]=new Array(addr6);
+locations[6]=new Array(addr7);*/
+//var test = getLocation("120 Catherine O., MONTREAL, QUEBEC,  H2A 1R9");
+//alert(test);
+                 //    alert(" locations[0][0]="+locations[0][0]+" locations[1][0]="+locations[1][0]+" locations[2][0]="+locations[2][0]);
+                   //  alert("addr2[0]="+addr2[0]+" addr2[1]="+addr2[1]+" locations[1]="+locations[1]);
+                   //  alert("addr3[0]="+addr3[0]+" addr3[1]="+addr3[1]+" locations[2]="+locations[2]);
+                   //  alert("addr4[0]="+addr4[0]+" addr4[1]="+addr4[1]+" locations[3]="+locations[3]);
+        var locations = [
+                         [40.72956781, -73.99726866],
+                         [40.76221766, -73.96511769],
+                         [40.88496706, -73.88191222],
+                         [40.72228267, -73.99246214],
+                         [40.94982541, -73.84357452],
+                         [40.90261483, -74.15737152],
+                         [40.79145927, -74.08252716],
+                         [40.58423508, -73.96099091],
+                         [40.58110616, -73.97678375],
+                         [40.73112881, -74.07897948],
+                         [40.67386831, -74.10438536]
+                     ]; 
+        alert("locations="+locations);
+
+        </script>  
         <script type="text/javascript" src="/js/maps.js"></script>
     </body>
 </html>
