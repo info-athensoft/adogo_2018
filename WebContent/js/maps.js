@@ -13,13 +13,13 @@
 					+e+">"+a+'</a></h4><span class="map-popup-location-info"><i class="fa fa-map-marker"></i>'
 					+t+'</span><span class="map-popup-location-phone"><i class="fa fa-phone"></i>'
 					+i+"</span></div></div></div></div>"}
-		var a=[[o("listing-single2.html","Hotels","/images/all/22.jpg","Luxary Hotel-Spa","1327 Intervale Ave, Bronx, NY ","+38099231212","5","27"),locations[0][0], locations[0][1],1,n],
+		var a=[[o("listing-single2.html","Hotels","/images/all/22.jpg","Luxary Hotel-Spa","120 Catherine O., MONTREAL, QUEBEC,CANADA ","+38099231212","5","27"),locations[0][0], locations[0][1],1,n],
 		        [o("listing-single.html","Food and Drink","/images/all/8.jpg","Luxary Restaurant","W 85th St, New York, NY ","+38099231212","4","5"),locations[1][0], locations[1][1],2,n],
 		        [o("listing-single.html","Gym - Fitness","/images/all/3.jpg","Gym In CityCenter","40 Journal Square Plaza, Jersey City, NJ","+38099231212","4","5"),locations[2][0], locations[2][1],3,n],
 		        [o("listing-single.html","Shop - Store","/images/all/21.jpg","Shop In City Mol","75 Prince St, New York, NY ","+38099231212","4","127"),locations[3][0], locations[3][1],4,n],
 		        [o("listing-single.html","Food and Drink","/images/all/4.jpg","Luxary Restaurant","34-42 Montgomery St, New York, NY","+38099231212","5","43"),locations[4][0], locations[4][1],5,n],
-		        [o("listing-single.html","Gym - Fitness","/images/all/20.jpg","Gym In CityCenter","70 Bright St, Jersey City, NJ","+38099231212","4","7"),locations[5][0], locations[5][1],6,n],
-		        [o("listing-single.html","Shop - Store","/images/all/6.jpg","Shop In City Mol","123 School St. Lynchburg, NY ","+38099231212","3","4"),locations[6][0], locations[6][1],7,n]/*,
+		        [o("listing-single.html","Gym - Fitness","/images/all/20.jpg","Gym In CityCenter","70 Bright St, Jersey City, NJ","+38099231212","4","7"),locations[5][0], locations[5][1],6,n]/*,
+		        [o("listing-single.html","Shop - Store","/images/all/6.jpg","Shop In City Mol","123 School St. Lynchburg, NY ","+38099231212","3","4"),locations[6][0], locations[6][1],7,n],
 		        [o("listing-single2.html","Hotels","/images/all/23.jpg","Fancy Hotel","Mt Carmel Pl, New York, NY","+38099231212","5","3"),40.58423508,-73.96099091,8,n],
 		        [o("listing-single2.html","Hotels","/images/all/7.jpg","Luxary Hotel-Spa","1-30 Hunters Point Ave, Long Island City, NY","+38099231212","5","12"),40.58110616,-73.97678375,9,n],
 		        [o("listing-single3.html","Conference and Events","/images/all/1.jpg","Web Design Event ","726-1728 2nd Ave, New York, NY","+38099231212","5","17"),40.73112881,-74.07897948,10,n],
@@ -39,7 +39,7 @@
 				var n=r;n-1<0?google.maps.event.trigger(v[v.length-1],"click"):google.maps.event.trigger(v[n-1],"click")
 			}
 		});
-		var r,g=new google.maps.Map(document.getElementById("map-main"),{zoom:l,scrollwheel:s,center:new google.maps.LatLng(40.7,-73.87),mapTypeId:google.maps.MapTypeId.ROADMAP,zoomControl:!1,mapTypeControl:!1,scaleControl:!1,panControl:!1,navigationControl:!1,streetViewControl:!1,animation:google.maps.Animation.BOUNCE,gestureHandling:"cooperative",styles:[{featureType:"administrative",elementType:"labels.text.fill",stylers:[{color:"#444444"}]}]}),
+		var r,g=new google.maps.Map(document.getElementById("map-main"),{zoom:l,scrollwheel:s,center:new google.maps.LatLng(45.5,-73.63),mapTypeId:google.maps.MapTypeId.ROADMAP,zoomControl:!1,mapTypeControl:!1,scaleControl:!1,panControl:!1,navigationControl:!1,streetViewControl:!1,animation:google.maps.Animation.BOUNCE,gestureHandling:"cooperative",styles:[{featureType:"administrative",elementType:"labels.text.fill",stylers:[{color:"#444444"}]}]}),
 			m=document.createElement("div");
 		m.className="map-box";
 		var p,c,d={content:m,disableAutoPan:!0,alignBottom:!0,maxWidth:300,pixelOffset:new google.maps.Size(-140,-45),zIndex:null,boxStyle:{width:"260px"},closeBoxMargin:"0",closeBoxURL:"",infoBoxClearance:new google.maps.Size(1,1),isHidden:!1,pane:"floatPane",enableEventPropagation:!1},
@@ -67,14 +67,14 @@
             return ('<div class="map-popup-wrap"><div class="map-popup"><div class="infoBox-close"><i class="fa fa-times"></i></div><div class="map-popup-category">' + locationCategory + '</div><a href="' + locationURL + '" class="listing-img-content fl-wrap"><img src="' + locationImg + '" alt=""></a> <div class="listing-content fl-wrap"><div class="card-popup-raining map-card-rainting" data-staRrating="' + locationStarRating + '"><span class="map-popup-reviews-count">( ' + locationRevievsCounter + ' reviews )</span></div><div class="listing-title fl-wrap"><h4><a href=' + locationURL + '>' + locationTitle + '</a></h4><span class="map-popup-location-info"><i class="fa fa-map-marker"></i>' + locationAddress + '</span><span class="map-popup-location-phone"><i class="fa fa-phone"></i>' + locationPhone + '</span></div></div></div></div>')
         }
         var locations = [
-            [locationData('listing-single2.html', 'Hotels', '/images/all/22.jpg', 'Luxary Hotel-Spa', "1327 Intervale Ave, Bronx, NY ", "+38099231212", "5", "27"), locations[0][0], locations[0][1], 1, markerIcon],
-            [locationData('listing-single.html', 'Food and Drink', '/images/all/8.jpg', 'Luxary Restaurant', "W 85th St, New York, NY ", "+38099231212", "4", "5"), locations[1][0], locations[1][1], 2, markerIcon],
-            [locationData('listing-single.html', 'Gym - Fitness', '/images/all/3.jpg', 'Gym In CityCenter', "40 Journal Square Plaza, Jersey City, NJ", "+38099231212", "4", "5"), locations[2][0], locations[2][1], 3, markerIcon],
+            [locationData('listing-single2.html', 'Hotels', '/images/all/22.jpg', 'Luxary Hotel-Spa', "120 Catherine O., MONTREAL, QUEBEC,CANADA ", "+38099231212", "5", "27"), locations[0][0], locations[0][1], 1, markerIcon],
+             [locationData('listing-single.html', 'Food and Drink', '/images/all/8.jpg', 'Luxary Restaurant', "W 85th St, New York, NY ", "+38099231212", "4", "5"), locations[1][0], locations[1][1], 2, markerIcon],
+                           [locationData('listing-single.html', 'Gym - Fitness', '/images/all/3.jpg', 'Gym In CityCenter', "40 Journal Square Plaza, Jersey City, NJ", "+38099231212", "4", "5"), locations[2][0], locations[2][1], 3, markerIcon],
             [locationData('listing-single.html', 'Shop - Store', '/images/all/21.jpg', 'Shop In City Mol', "75 Prince St, New York, NY ", "+38099231212", "4", "127"), locations[3][0], locations[3][1], 4, markerIcon],
-            [locationData('listing-single.html', 'Food and Drink', '/images/all/4.jpg', 'Luxary Restaurant', "34-42 Montgomery St, New York, NY", "+38099231212", "5", "43"), locations[4][0], locations[4][1], 5, markerIcon],
+            /* [locationData('listing-single.html', 'Food and Drink', '/images/all/4.jpg', 'Luxary Restaurant', "34-42 Montgomery St, New York, NY", "+38099231212", "5", "43"), locations[4][0], locations[4][1], 5, markerIcon],
             [locationData('listing-single.html', 'Gym - Fitness', '/images/all/20.jpg', 'Gym In CityCenter', "70 Bright St, Jersey City, NJ", "+38099231212", "4", "7"), locations[5][0], locations[5][1], 6, markerIcon],
             [locationData('listing-single.html', 'Shop - Store', '/images/all/6.jpg', 'Shop In City Mol', "123 School St. Lynchburg, NY ", "+38099231212", "3", "4"), locations[6][0], locations[6][1], 7, markerIcon],
-/*            [locationData('listing-single2.html', 'Hotels', '/images/all/23.jpg', 'Fancy Hotel', "Mt Carmel Pl, New York, NY", "+38099231212", "5", "3"), 40.58423508, -73.96099091, 8, markerIcon],
+            [locationData('listing-single2.html', 'Hotels', '/images/all/23.jpg', 'Fancy Hotel', "Mt Carmel Pl, New York, NY", "+38099231212", "5", "3"), 40.58423508, -73.96099091, 8, markerIcon],
             [locationData('listing-single2.html', 'Hotels', '/images/all/7.jpg', 'Luxary Hotel-Spa', "1-30 Hunters Point Ave, Long Island City, NY", "+38099231212", "5", "12"), 40.58110616, -73.97678375, 9, markerIcon],
             [locationData('listing-single3.html', 'Conference and Events', '/images/all/1.jpg', 'Web Design Event ', "726-1728 2nd Ave, New York, NY", "+38099231212", "5", "17"), 40.73112881, -74.07897948, 10, markerIcon],
             [locationData('listing-single3.html', 'Conference and Events', '/images/all/9.jpg', 'Apartment Design Event ', "9443 Fairview Ave, North Bergen, NJ", "+38099231212", "4", "11"), 40.67386831, -74.10438536, 11, markerIcon],
@@ -124,7 +124,7 @@
         var map = new google.maps.Map(document.getElementById('map-main'), {
             zoom: zoomLevel,
             scrollwheel: scrollEnabled,
-            center: new google.maps.LatLng(40.7, -73.87),
+            center: new google.maps.LatLng(45.5,-73.63),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             zoomControl: false,
             mapTypeControl: false,

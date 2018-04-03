@@ -219,6 +219,6 @@ public class Address {
 	}
 	
 	public String getFullAddress() {
-		return streetNo + " " + streetName + ", " + cityName + ", " + provName + ", " + countryName + " " + postalCode;
+		return streetNo + " " + streetName + ", " + cityName + ", " + provName + ", " + countryName + " " + postalCode; //;//
 	}
 }

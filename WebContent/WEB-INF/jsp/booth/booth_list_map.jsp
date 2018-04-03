@@ -245,11 +245,16 @@
           });
         }
         //alert("locations="+locations);
-        getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
-               
-        getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
-                getLocation("160 Saint Laurent O., MONTREAL, QUEBEC,  H2A 1R9");
-                
+        //getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
+        
+                //getLocation("160 Saint Laurent O., MONTREAL, QUEBEC,  H2A 1R9");
+                //getLocation("3300 Cavendish, MONTREAL, QUEBEC,  H4B 2M8"); 
+                <c:forEach var="booth" items="${boothList}">
+                	//var addr = ${addressMap.get(booth.bizId)};
+                	getLocation("${addressMap.get(booth.bizId)}"); 
+                </c:forEach>
+                /*               
+                       
                 getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
         getLocation("160 Saint Laurent O., MONTREAL, QUEBEC,  H2A 1R9");
         getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
@@ -257,7 +262,7 @@
         //getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
         //getLocation("101 Sherbrook O., MONTREAL, QUEBEC,  H2B 1N2"); 
         //alert("locations="+locations);
-/*       alert("addr1[0]="+addr1[0]+" addr1[1]="+addr1[1]);
+       alert("addr1[0]="+addr1[0]+" addr1[1]="+addr1[1]);
         alert("addr2[0]="+addr2[0]+" addr2[1]="+addr2[1]);
         alert("addr3[0]="+addr3[0]+" addr3[1]="+addr3[1]);
         alert("addr4[0]="+addr4[0]+" addr4[1]="+addr4[1]);
@@ -276,9 +281,9 @@ locations[6]=new Array(addr7);*/
                    //  alert("addr3[0]="+addr3[0]+" addr3[1]="+addr3[1]+" locations[2]="+locations[2]);
                    //  alert("addr4[0]="+addr4[0]+" addr4[1]="+addr4[1]+" locations[3]="+locations[3]);
         var locations = [
-                         [40.72956781, -73.99726866],
-                         [40.76221766, -73.96511769],
-                         [40.88496706, -73.88191222],
+                         [45.476358, -73.5997324], //[40.72956781, -73.99726866], //
+                         [45.51963809999999, -73.7011617], //[40.76221766, -73.96511769], //
+                         [40.88496706, -73.88191222], //[45.4629931, -73.62796750000001],
                          [40.72228267, -73.99246214],
                          [40.94982541, -73.84357452],
                          [40.90261483, -74.15737152],
@@ -288,7 +293,7 @@ locations[6]=new Array(addr7);*/
                          [40.73112881, -74.07897948],
                          [40.67386831, -74.10438536]
                      ]; 
-        alert("locations="+locations);
+        //alert("locations="+locations);
 
         </script>  
         <script type="text/javascript" src="/js/maps.js"></script>
