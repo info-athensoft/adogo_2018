@@ -207,39 +207,25 @@
         <script type="text/javascript" src="/js/markerclusterer.js"></script>
         
         <script type="text/javascript">
-        var locations = new Array();
-        var i=0;
+        var boothArray = new Array();
       //Function to covert address to Latitude and Longitude
         var getLocation =  function(address) {
     	  //var location = new Array();
           var geocoder = new google.maps.Geocoder();
           geocoder.geocode( { 'address': address}, function(results, status) {
-        	  //locations = [[]];
           if (status == google.maps.GeocoderStatus.OK) {
               var latitude = results[0].geometry.location.lat();
               var longitude = results[0].geometry.location.lng();
               //alert("address:"+address+" latitude:"+latitude+" longitude:"+longitude);
-              //locations[i].push([latitude,longitude]);
-              //locations[i] = new Array();
-              //locations[i][0] = latitude;
-              //locations[i][1] = longitude;
-              locations.push(new Array(latitude,longitude));
-              //alert("address:"+address+" locations="+locations);
-              //locations[i] = [latitude,longitude];
-              i++;
-              //alert("address:"+address+" location[0]:"+location[0]+" location[1]:"+location[1]);
-              //return location;
+              boothArray.push([["listing-single2.html","Hotels","/images/all/22.jpg","Luxary Hotel-Spa","120 Catherine O., MONTREAL, QUEBEC,CANADA ","+38099231212","5","27"], [latitude,longitude]]);
+              alert("boothArray="+boothArray);
+              //boothArray.push(new Array(latitude,longitude));
+              //return (location);//new Array(latitude,longitude)
               }
           else {
-        	  alert("status="+status);
-        	//return ([0,0]);
-        	//  location[0] = 0;
-            //  location[1] = 0;
-            locations.push(new Array(0,0));
-        	//locations[i][0] = 0;
-            //locations[i][1] = 0;
-            //locations[i] = [0,0];
-            i++;
+        	 // alert("status="+status);
+           //locations.push(new Array());
+        	  //return (new Array());
           }
           //return location;
           });
@@ -249,38 +235,29 @@
         
                 //getLocation("160 Saint Laurent O., MONTREAL, QUEBEC,  H2A 1R9");
                 //getLocation("3300 Cavendish, MONTREAL, QUEBEC,  H4B 2M8"); 
+                //var boothArray =new Array();
+                //var i=0;
                 <c:forEach var="booth" items="${boothList}">
                 	//var addr = ${addressMap.get(booth.bizId)};
-                	getLocation("${addressMap.get(booth.bizId)}"); 
+                	getLocation("${addressMap.get(booth.bizId)}");
+                	//alert("loc="+loc);
+                	//"listing-single2.html","Hotels","/images/all/22.jpg","Luxary Hotel-Spa","120 Catherine O., MONTREAL, QUEBEC,CANADA ","+38099231212","5","27"
+                	//'listing-single2.html','Hotels','/images/all/22.jpg','Luxary Hotel-Spa',"120 Catherine O., MONTREAL, QUEBEC,CANADA ","+38099231212","5","27"
+                	//alert(loc && loc.length);
+                	//if (loc && loc.length) {
+                	//	boothArray.push(["listing-single2.html","Hotels","/images/all/22.jpg","Luxary Hotel-Spa","120 Catherine O., MONTREAL, QUEBEC,CANADA ","+38099231212","5","27"], loc);
+                		//sum latitude, longitude
+                	//	i++;
+                	//}
                 </c:forEach>
+                alert("boothArrayfinal="+boothArray);
                 /*               
                        
                 getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
         getLocation("160 Saint Laurent O., MONTREAL, QUEBEC,  H2A 1R9");
         getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
         getLocation("160 Saint Laurent O., MONTREAL, QUEBEC,  H2A 1R9");
-        //getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");
-        //getLocation("101 Sherbrook O., MONTREAL, QUEBEC,  H2B 1N2"); 
-        //alert("locations="+locations);
-       alert("addr1[0]="+addr1[0]+" addr1[1]="+addr1[1]);
-        alert("addr2[0]="+addr2[0]+" addr2[1]="+addr2[1]);
-        alert("addr3[0]="+addr3[0]+" addr3[1]="+addr3[1]);
-        alert("addr4[0]="+addr4[0]+" addr4[1]="+addr4[1]);
-        //var locations = new Array();
-locations[0]=new Array(addr1);
-locations[1]=new Array(addr2);
-locations[2]=new Array(addr3);
-locations[3]=new Array(addr4);
-locations[4]=new Array(addr5);
-locations[5]=new Array(addr6);
-locations[6]=new Array(addr7);*/
-//var test = getLocation("120 Catherine O., MONTREAL, QUEBEC,  H2A 1R9");
-//alert(test);
-                 //    alert(" locations[0][0]="+locations[0][0]+" locations[1][0]="+locations[1][0]+" locations[2][0]="+locations[2][0]);
-                   //  alert("addr2[0]="+addr2[0]+" addr2[1]="+addr2[1]+" locations[1]="+locations[1]);
-                   //  alert("addr3[0]="+addr3[0]+" addr3[1]="+addr3[1]+" locations[2]="+locations[2]);
-                   //  alert("addr4[0]="+addr4[0]+" addr4[1]="+addr4[1]+" locations[3]="+locations[3]);
-        var locations = [
+/*        var locations = [
                          [45.476358, -73.5997324], //[40.72956781, -73.99726866], //
                          [45.51963809999999, -73.7011617], //[40.76221766, -73.96511769], //
                          [40.88496706, -73.88191222], //[45.4629931, -73.62796750000001],
@@ -292,9 +269,8 @@ locations[6]=new Array(addr7);*/
                          [40.58110616, -73.97678375],
                          [40.73112881, -74.07897948],
                          [40.67386831, -74.10438536]
-                     ]; 
+                     ]; */
         //alert("locations="+locations);
-
         </script>  
         <script type="text/javascript" src="/js/maps.js"></script>
     </body>
