@@ -217,8 +217,8 @@
               var latitude = results[0].geometry.location.lat();
               var longitude = results[0].geometry.location.lng();
               //alert("address:"+address+" latitude:"+latitude+" longitude:"+longitude);
-              boothArray.push([["listing-single2.html","Hotels","/images/all/22.jpg","Luxary Hotel-Spa","120 Catherine O., MONTREAL, QUEBEC,CANADA ","+38099231212","5","27"], [latitude,longitude]]);
-              alert("boothArray="+boothArray);
+              boothArray.push([["listing-single2.html","Hotels","/images/booth/edu-01.jpg","Luxary Hotel-Spa",address,"+38099231212","5","27"], [latitude,longitude]]);
+              //alert("boothArray="+boothArray);
               //boothArray.push(new Array(latitude,longitude));
               //return (location);//new Array(latitude,longitude)
               }
@@ -250,7 +250,7 @@
                 	//	i++;
                 	//}
                 </c:forEach>
-                alert("boothArrayfinal="+boothArray);
+                //alert("boothArrayfinal="+boothArray);
                 /*               
                        
                 getLocation("120 Catherine O., MONTREAL, QUEBEC,  H3Z 1N8");

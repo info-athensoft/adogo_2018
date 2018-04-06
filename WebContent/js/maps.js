@@ -1,4 +1,3 @@
-alert("boothArrayfinal2="+boothArray);
 !function(e){
 	"use strict";
 	var n={anchor:new google.maps.Point(22,16),url:"/images/marker.png"};
@@ -14,7 +13,11 @@ alert("boothArrayfinal2="+boothArray);
 					+e+">"+a+'</a></h4><span class="map-popup-location-info"><i class="fa fa-map-marker"></i>'
 					+t+'</span><span class="map-popup-location-phone"><i class="fa fa-phone"></i>'
 					+i+"</span></div></div></div></div>"}
-	/*	var a=[[o("listing-single2.html","Hotels","/images/all/22.jpg","Luxary Hotel-Spa","120 Catherine O., MONTREAL, QUEBEC,CANADA ","+38099231212","5","27"),locations[0][0], locations[0][1],1,n],
+		//var b = boothArray[0];
+		//var a=[[o(b[0][0],b[0][1],b[0][2],b[0][3],b[0][4],b[0][5],b[0][6],b[0][7]),b[1][0], b[1][1],1,n]];
+		//var a=[[]];
+		//a.concat([[o(b[0][0],b[0][1],b[0][2],b[0][3],b[0][4],b[0][5],b[0][6],b[0][7]),b[1][0], b[1][1],1,n]]);
+		/*	var a=[[o("listing-single2.html","Hotels","/images/all/22.jpg","Luxary Hotel-Spa","120 Catherine O., MONTREAL, QUEBEC,CANADA ","+38099231212","5","27"),locations[0][0], locations[0][1],1,n],
 		        [o("listing-single.html","Food and Drink","/images/all/8.jpg","Luxary Restaurant","W 85th St, New York, NY ","+38099231212","4","5"),locations[1][0], locations[1][1],2,n],
 		        [o("listing-single.html","Gym - Fitness","/images/all/3.jpg","Gym In CityCenter","40 Journal Square Plaza, Jersey City, NJ","+38099231212","4","5"),locations[2][0], locations[2][1],3,n],
 		        [o("listing-single.html","Shop - Store","/images/all/21.jpg","Shop In City Mol","75 Prince St, New York, NY ","+38099231212","4","127"),locations[3][0], locations[3][1],4,n],
@@ -27,9 +30,13 @@ alert("boothArrayfinal2="+boothArray);
 		        [o("listing-single3.html","Conference and Events","/images/all/1.jpg","Web Design Event ","726-1728 2nd Ave, New York, NY","+38099231212","5","17"),40.73112881,-74.07897948,10,n],
 		        [o("listing-single3.html","Conference and Events","/images/all/9.jpg","Apartment Design Event ","9443 Fairview Ave, North Bergen, NJ","+38099231212","4","11"),40.67386831,-74.10438536,11,n] ];*/
 	    var a=[];
-	    boothArray.forEach(function(b) {
-	    	a.concat([o(b[0][0],b[0][1],b[0][2],b[0][3],b[0][4],b[0][5],b[0][6],b[0][7]),b[1][0], b[1][1],1,n]);
-	    });
+	    //var a=[];
+	    for (var i = 0; i < boothArray.length; i++) {
+	    	var b = boothArray[i];
+//	    	a.concat([o(b[0][0],b[0][1],b[0][2],b[0][3],b[0][4],b[0][5],b[0][6],b[0][7]),b[1][0], b[1][1],(i+1),n]);
+	    	a.push([o(b[0][0],b[0][1],b[0][2],b[0][3],b[0][4],b[0][5],b[0][6],b[0][7]),b[1][0], b[1][1],(i+1),n]);
+	    	//a.concat([[o(JSON.stringify(b[0])),b[1][0], b[1][1],(i+1),n]]);
+	    } 
 		
 		var t=e("#map-main").attr("data-map-zoom"),
 	        i=e("#map-main").attr("data-map-scroll");
@@ -73,6 +80,10 @@ alert("boothArrayfinal2="+boothArray);
         function locationData(locationURL, locationCategory, locationImg, locationTitle, locationAddress, locationPhone, locationStarRating, locationRevievsCounter) {
             return ('<div class="map-popup-wrap"><div class="map-popup"><div class="infoBox-close"><i class="fa fa-times"></i></div><div class="map-popup-category">' + locationCategory + '</div><a href="' + locationURL + '" class="listing-img-content fl-wrap"><img src="' + locationImg + '" alt=""></a> <div class="listing-content fl-wrap"><div class="card-popup-raining map-card-rainting" data-staRrating="' + locationStarRating + '"><span class="map-popup-reviews-count">( ' + locationRevievsCounter + ' reviews )</span></div><div class="listing-title fl-wrap"><h4><a href=' + locationURL + '>' + locationTitle + '</a></h4><span class="map-popup-location-info"><i class="fa fa-map-marker"></i>' + locationAddress + '</span><span class="map-popup-location-phone"><i class="fa fa-phone"></i>' + locationPhone + '</span></div></div></div></div>')
         }
+//        var b = boothArray[0];
+//        var locations = [];
+//        locations.push([locationData(b[0][0],b[0][1],b[0][2],b[0][3],b[0][4],b[0][5],b[0][6],b[0][7]),b[1][0],b[1][1],1,markerIcon]);
+//           var locations = [[locationData(b[0][0],b[0][1],b[0][2],b[0][3],b[0][4],b[0][5],b[0][6],b[0][7]),b[1][0],b[1][1],1,markerIcon]];
         /*     var locations = [
             [locationData('listing-single2.html', 'Hotels', '/images/all/22.jpg', 'Luxary Hotel-Spa', "120 Catherine O., MONTREAL, QUEBEC,CANADA ", "+38099231212", "5", "27"), locations[0][0], locations[0][1], 1, markerIcon],
              [locationData('listing-single.html', 'Food and Drink', '/images/all/8.jpg', 'Luxary Restaurant', "W 85th St, New York, NY ", "+38099231212", "4", "5"), locations[1][0], locations[1][1], 2, markerIcon],
@@ -88,9 +99,12 @@ alert("boothArrayfinal2="+boothArray);
             [locationData('listing-single3.html', 'Conference and Events', '/images/all/9.jpg', 'Apartment Design Event ', "9443 Fairview Ave, North Bergen, NJ", "+38099231212", "4", "11"), 40.67386831, -74.10438536, 11, markerIcon],
        ];*/ 
         var locations = [];
-        boothArray.forEach(function(b) {
-        	locations.concat([locationData(b[0][0],b[0][1],b[0][2],b[0][3],b[0][4],b[0][5],b[0][6],b[0][7]),b[1][0], b[1][1],1,markerIcon]);
-	    });
+        for (var i = 0; i < boothArray.length; i++) {
+	    	var b = boothArray[i];
+        	locations.push([locationData(b[0][0],b[0][1],b[0][2],b[0][3],b[0][4],b[0][5],b[0][6],b[0][7]),b[1][0], b[1][1],1,markerIcon]);
+//	    	locations.push([locationData(JSON.stringify(b[0])),b[1][0], b[1][1],(i+1),markerIcon]);
+	    	//locations.concat([[locationData(b[0][0],b[0][1],b[0][2],b[0][3],b[0][4],b[0][5],b[0][6],b[0][7]),b[1][0], b[1][1],(i+1),markerIcon]]);
+	    } 
         
         var mapZoomAttr = $('#map-main').attr('data-map-zoom');
         var mapScrollAttr = $('#map-main').attr('data-map-scroll');
