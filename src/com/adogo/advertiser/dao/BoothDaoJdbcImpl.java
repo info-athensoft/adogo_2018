@@ -55,6 +55,24 @@ public class BoothDaoJdbcImpl implements BoothDao {
 		logger.info("exiting... BoothDaoJdbcImpl>findAll");
 		return boothList;
 	}
+	
+	@Override
+	public List<Booth> findAllByPageLoad(int page, int pageLoad) {
+		logger.info("entering... BoothDaoJdbcImpl>findAllByPageLoad");
+		int offset = (page-1)*pageLoad;
+		String sql = "select * from " + TABLE + " where booth_status > 0 LIMIT " + pageLoad + " OFFSET " + offset;	
+		logger.info("sql : "+sql);
+		List<Booth> boothList = new ArrayList<Booth>();
+		try{
+			boothList = jdbc.query(sql, new BoothRowMapper());
+		}catch(EmptyResultDataAccessException ex){
+			
+			ex.printStackTrace();
+		}
+		
+		logger.info("exiting... BoothDaoJdbcImpl>findAllByPageLoad");
+		return boothList;
+	}
 /*	
 	@Override
 	public List<Booth> findByClassLevel1(int classNum) {
@@ -349,5 +367,7 @@ public class BoothDaoJdbcImpl implements BoothDao {
 	        return x;
 		}		
 	}
+
+	
 
 }

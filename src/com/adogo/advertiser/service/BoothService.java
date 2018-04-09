@@ -124,5 +124,9 @@ public class BoothService {
 	public List<Booth> findByClass(int categoryNumLv1, int categoryNumLv2){
 		return boothDao.findByClass(categoryNumLv1,categoryNumLv2);
 	}
-*/	
+*/
+
+	public List<Booth> findAllByPageLoad(int page, int pageLoad) {
+		return boothDao.findAllByPageLoad(page, pageLoad);
+	}	
 }

@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.IntStream;
 
 import javax.servlet.http.HttpSession;
 
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.adogo.advertiser.entity.IndustryCode;
 import com.adogo.advertiser.entity.MediaType;
 import com.adogo.advertiser.entity.booth.Booth;
 import com.adogo.advertiser.entity.booth.BoothImage;
@@ -160,15 +162,20 @@ public class BoothController {
 		logger.info("before List<Booth> booth ......");
 		List<Booth> booth = boothService.findAll();
 		logger.info("List<Booth> booth = " + booth.size());
+		List<Booth> boothArrayList = new ArrayList<Booth>();
 		for(Booth b: booth){
+			boothArrayList.add(b);
 			BusinessAddress bzAdd = businessAddressService.getBusinessAddressByBizId(b.getBizId()).get(0);
 			addressMap.put(b.getBizId(), bzAdd.getFullAddress());
 			int categoryNo = b.getCategoryNo();
 			categoryMap.put(categoryNo, (b.getCategoryNo()%2==1) ? "Category One" : "Category Two");
 		}
-		
+		for(int i=0; i<boothArrayList.size(); i++) {
+			logger.info("ArrayList<Booth> booth[" +i+"] globalId="+ boothArrayList.get(i).getGlobalId() +" BizName="+ boothArrayList.get(i).getBizName());
+			
+		}
 		Map<String,Object> data = mav.getModel();
-		data.put("boothList", booth);
+		data.put("boothList", boothArrayList);
 		data.put("addressMap", addressMap);
 		data.put("categoryMap", categoryMap);
 		
@@ -177,5 +184,70 @@ public class BoothController {
 		return mav;
 	}
 
-
+	@RequestMapping("booth/list_map2")
+	public ModelAndView goBoothListMap2(){
+		logger.info("entering... /booth/list_map2");
+		ModelAndView mav = new ModelAndView();
+		
+		Map<Long,String> addressMap = new HashMap<Long,String>();
+		Map<Integer,String> categoryMap = new HashMap<Integer,String>();
+		logger.info("before List<Booth> booth ......");
+		List<Booth> booth = boothService.findAll();
+		logger.info("List<Booth> booth = " + booth.size());
+		List<Booth> boothArrayList = new ArrayList<Booth>();
+		for(Booth b: booth){
+			boothArrayList.add(b);
+			BusinessAddress bzAdd = businessAddressService.getBusinessAddressByBizId(b.getBizId()).get(0);
+			addressMap.put(b.getBizId(), bzAdd.getFullAddress());
+			int categoryNo = b.getCategoryNo();
+			categoryMap.put(categoryNo, (b.getCategoryNo()%2==1) ? "Category One" : "Category Two");
+		}
+		for(int i=0; i<boothArrayList.size(); i++) {
+			logger.info("ArrayList<Booth> booth[" +i+"] globalId="+ boothArrayList.get(i).getGlobalId() +" BizName="+ boothArrayList.get(i).getBizName());
+			
+		}
+		Map<String,Object> data = mav.getModel();
+		data.put("boothList", boothArrayList);
+		data.put("addressMap", addressMap);
+		data.put("categoryMap", categoryMap);
+		data.put("perLoad", "2");
+		data.put("page", "1");
+		
+		mav.setViewName("booth/booth_list_map2");
+		logger.info("exiting... /booth/list_map2");
+		return mav;
+	}
+	
+	@RequestMapping(value="/booth/list_map2_load_more",method=RequestMethod.GET,produces="application/json")
+	@ResponseBody
+	public Map<String,Object> goBoothListMap2LoadMore(@RequestParam int page){
+		logger.info("entering /booth/list_map2_load_more, page="+page);
+		
+		ModelAndView mav = new ModelAndView();
+		
+		//data
+		Map<String, Object> model = mav.getModel();
+		
+		//retrieve data from database via service and dao
+		Map<Long,String> addressMap = new HashMap<Long,String>();
+		Map<Integer,String> categoryMap = new HashMap<Integer,String>();
+		List<Booth> booth = boothService.findAllByPageLoad(++page, 2); //pageLoad
+		for(Booth b: booth){
+			BusinessAddress bzAdd = businessAddressService.getBusinessAddressByBizId(b.getBizId()).get(0);
+			addressMap.put(b.getBizId(), bzAdd.getFullAddress());
+			int categoryNo = b.getCategoryNo();
+			categoryMap.put(categoryNo, (b.getCategoryNo()%2==1) ? "Category One" : "Category Two");
+		}
+		model.put("boothList", booth);
+		if (booth.size()>0)
+			model.put("page", page);
+		else 
+			model.put("page", --page);
+		
+		model.put("boothList", booth);
+		model.put("addressMap", addressMap);
+		model.put("categoryMap", categoryMap);
+		logger.info("exiting /booth/list_map2_load_more");
+		return model;
+	}
 }
