@@ -184,7 +184,7 @@ public class BoothController {
 		return mav;
 	}
 
-	@RequestMapping("booth/list_map2")
+	@RequestMapping("/booth/list_map2")
 	public ModelAndView goBoothListMap2(){
 		logger.info("entering... /booth/list_map2");
 		ModelAndView mav = new ModelAndView();
@@ -192,7 +192,8 @@ public class BoothController {
 		Map<Long,String> addressMap = new HashMap<Long,String>();
 		Map<Integer,String> categoryMap = new HashMap<Integer,String>();
 		logger.info("before List<Booth> booth ......");
-		List<Booth> booth = boothService.findAll();
+		//List<Booth> booth = boothService.findAll();
+		List<Booth> booth = boothService.findAllByPageLoad(1, 2);
 		logger.info("List<Booth> booth = " + booth.size());
 		List<Booth> boothArrayList = new ArrayList<Booth>();
 		for(Booth b: booth){

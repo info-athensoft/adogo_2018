@@ -132,8 +132,7 @@
                             <a class="custom-scroll-link back-to-filters btf-l" href="#lisfw"><i class="fa fa-angle-double-up"></i><span>Back to Filters</span></a> 
                             <div id="all-booths" class="container">
                             
-                            <c:forEach var="i"  begin = "0" end = "${perLoad-1}">
-                            	<c:set var="booth" scope="application" value="${boothList.get(i)}" />
+                            <c:forEach var="booth" items="${boothList}">
                             	<!-- listing-item -->
                                 <div class="listing-item">
                                     <article class="geodir-category-listing fl-wrap">
@@ -237,8 +236,8 @@
           });
         }
                 //var i=0;
-                <c:forEach var="i"  begin = "0" end = "${perLoad-1}">
-                	getLocation("${addressMap.get(boothList.get(i).bizId)}");
+                <c:forEach var="booth" items="${boothList}">
+                	getLocation("${addressMap.get(booth.bizId)}");
                 </c:forEach>
 
 /*        var locations = [
@@ -309,7 +308,8 @@
 	            					   +'</div>';
        					   $container.append($(newDiv));		   
        					}
-        				$("#load-more-button")[0].click();
+        				//$("#load-more-button")[0].click();
+        				setTimeout(function(){ $("#load-more-button")[0].click()}, 300);
         				//window.open(jQuery('#load-more-button').attr('href'), '_blank');
         				//setTimeout(function(){ $('#load-more-button').click()}, 100);
         			}		
