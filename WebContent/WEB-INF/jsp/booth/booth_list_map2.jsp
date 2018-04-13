@@ -165,7 +165,7 @@
                   
                             </div>
                             <a id="load-more" class="load-more-button" href="#" onclick="loadMore('${perLoad}');">Load more <i class="fa fa-circle-o-notch"></i> </a>
-                            <a id="load-more-button" href="#" >...</a>  
+                            <a id="load-more-button" href="#" ></a>  
                         </div>
                         <!-- list-main-wrap end-->
                     </div>
@@ -214,7 +214,7 @@
         localStorage.setItem("page", "${page}");// 1
         var boothArray = new Array();
       //Function to covert address to Latitude and Longitude
-        var getLocation =  function(address) {
+        var getLocation =  function(bizName, address) {
     	  //var location = new Array();
           var geocoder = new google.maps.Geocoder();
           geocoder.geocode( { 'address': address}, function(results, status) {
@@ -222,7 +222,7 @@
               var latitude = results[0].geometry.location.lat();
               var longitude = results[0].geometry.location.lng();
               //alert("address:"+address+" latitude:"+latitude+" longitude:"+longitude);
-              boothArray.push([["listing-single2.html","Hotels","/images/booth/edu-01.jpg","Luxary Hotel-Spa",address,"+38099231212","5","27"], [latitude,longitude]]);
+              boothArray.push([["listing-single2.html","Hotels","/images/booth/edu-01.jpg",bizName,address,"+38099231212","5","27"], [latitude,longitude]]);
               //alert("boothArray="+boothArray);
               //boothArray.push(new Array(latitude,longitude));
               //return (location);//new Array(latitude,longitude)
@@ -237,7 +237,7 @@
         }
                 //var i=0;
                 <c:forEach var="booth" items="${boothList}">
-                	getLocation("${addressMap.get(booth.bizId)}");
+                	getLocation("${booth.bizName}","${addressMap.get(booth.bizId)}");
                 </c:forEach>
 
 /*        var locations = [
@@ -272,15 +272,15 @@
         			data: {	page : page },
         			timeout : 10000,
         			success:function(data){	
-        				//alert("/booth/list_map2_load_more success, new page="+data.page);
+        				//alert("loadMore called successfully.");
         				localStorage.setItem("page", data.page);
         				//alert("boothList size="+data.boothList.length+" .bizName="+data.boothList[0].bizName);
         				var $container = $("#all-booths");
         				var boothList = data.boothList;
         				for(var i = 0, size = boothList.length; i < size ; i++){
        					   var booth = boothList[i];
-       					   getLocation(data.addressMap[booth.bizId]);
-       					   var newDiv = '<div class="listing-item">'
+       					   getLocation(booth.bizName, data.addressMap[booth.bizId]);
+       					   var newDiv = '<div class="listing-item" tabindex="-1">'
 	            					   +'	<article class="geodir-category-listing fl-wrap">'
 	            					   +'		<div class="geodir-category-img">'
 	            					   +'			<img src="/images/booth/edu-01.jpg" alt="">'
@@ -306,28 +306,24 @@
 	            					   +'		</div>'
 	            					   +'	</article>'
 	            					   +'</div>';
-       					   $container.append($(newDiv));		   
+       					   $container.append($(newDiv));
+       						//
+       					   //if (i==0)
+       						//	$(window).scrollTop($(newDiv).offset().top); //firstAddedDiv
        					}
+        				
         				//$("#load-more-button")[0].click();
-        				setTimeout(function(){ $("#load-more-button")[0].click()}, 300);
-        				//window.open(jQuery('#load-more-button').attr('href'), '_blank');
-        				//setTimeout(function(){ $('#load-more-button').click()}, 100);
-        			}		
+        				setTimeout(function(){ $("#load-more-button")[0].click()}, 500);
+        				//jQuery(".listing-item").attr("tabindex",-1).focus();//$(window).scrollTop($(firstAddedDiv).offset().top);
+        			},
+        			complete: function() { 
+        				//alert('completed');
+        				setTimeout(function(){ jQuery(".listing-item").attr("tabindex",-1).focus()}, 500);
+        				//jQuery(".listing-item").attr("tabindex",-1).focus();
+        			}
         		});
         	}
-        	
-        	jQuery.fn.simulateClick = function() {
-        	    return this.each(function() {
-        	        if('createEvent' in document) {
-        	            var doc = this.ownerDocument,
-        	                evt = doc.createEvent('MouseEvents');
-        	            evt.initMouseEvent('click', true, true, doc.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
-        	            this.dispatchEvent(evt);
-        	        } else {
-        	            this.click(); // IE Boss!
-        	        }
-        	    });
-        	}
+
         </script>
     </body>
 </html>

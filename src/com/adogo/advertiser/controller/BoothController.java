@@ -43,6 +43,8 @@ public class BoothController {
 	
 	private static final Logger logger = Logger.getLogger(BoothController.class);
 	
+	private final int PER_LOAD = 4;
+	
 	@Autowired
 	private BoothService boothService;
 		
@@ -193,7 +195,7 @@ public class BoothController {
 		Map<Integer,String> categoryMap = new HashMap<Integer,String>();
 		logger.info("before List<Booth> booth ......");
 		//List<Booth> booth = boothService.findAll();
-		List<Booth> booth = boothService.findAllByPageLoad(1, 2);
+		List<Booth> booth = boothService.findAllByPageLoad(1, PER_LOAD);
 		logger.info("List<Booth> booth = " + booth.size());
 		List<Booth> boothArrayList = new ArrayList<Booth>();
 		for(Booth b: booth){
@@ -211,7 +213,7 @@ public class BoothController {
 		data.put("boothList", boothArrayList);
 		data.put("addressMap", addressMap);
 		data.put("categoryMap", categoryMap);
-		data.put("perLoad", "2");
+		data.put("perLoad", PER_LOAD);
 		data.put("page", "1");
 		
 		mav.setViewName("booth/booth_list_map2");
@@ -232,7 +234,7 @@ public class BoothController {
 		//retrieve data from database via service and dao
 		Map<Long,String> addressMap = new HashMap<Long,String>();
 		Map<Integer,String> categoryMap = new HashMap<Integer,String>();
-		List<Booth> booth = boothService.findAllByPageLoad(++page, 2); //pageLoad
+		List<Booth> booth = boothService.findAllByPageLoad(++page, PER_LOAD); //pageLoad
 		for(Booth b: booth){
 			BusinessAddress bzAdd = businessAddressService.getBusinessAddressByBizId(b.getBizId()).get(0);
 			addressMap.put(b.getBizId(), bzAdd.getFullAddress());
