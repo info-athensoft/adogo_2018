@@ -164,7 +164,7 @@ public class BoothController {
 			BusinessAddress bzAdd = businessAddressService.getBusinessAddressByBizId(b.getBizId()).get(0);
 			addressMap.put(b.getBizId(), bzAdd.getFullAddress());
 			int categoryNo = b.getCategoryNo();
-			categoryMap.put(categoryNo, (b.getCategoryNo()%2==1) ? "Category One" : "Category Two");
+			categoryMap.put(categoryNo, (b.getCategoryNo()%2==1) ? "Category One" : "Category Two");		//TODO
 		}
 		
 		Map<String,Object> data = mav.getModel();

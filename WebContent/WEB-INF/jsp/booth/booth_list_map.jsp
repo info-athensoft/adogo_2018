@@ -161,7 +161,7 @@
                          </c:forEach>
                   
                             </div>
-                            <a class="load-more-button" href="#">Load more <i class="fa fa-circle-o-notch"></i> </a>  
+                            <a class="load-more-button" href="#">Load more <i class="fa fa-circle-o-notch"></i></a>  
                         </div>
                         <!-- list-main-wrap end-->
                     </div>
