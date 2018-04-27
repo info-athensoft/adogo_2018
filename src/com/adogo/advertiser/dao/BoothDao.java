@@ -6,6 +6,7 @@ import com.adogo.advertiser.entity.booth.Booth;
 
 public interface BoothDao {
 	public List<Booth> findAll();
+	public List<Booth> findAllByPageLoad(int page, int pageLoad);
 	public List<Booth> findBoothByUserId(long userId);
 	public List<Booth> findBoothByAdvertiserId(long advertiserId);
 	public List<Booth> findBoothByBizId(long bizId);
@@ -17,4 +18,5 @@ public interface BoothDao {
 	
 	public int update(Booth x);
 	public int create(Booth x);
+	
 }
