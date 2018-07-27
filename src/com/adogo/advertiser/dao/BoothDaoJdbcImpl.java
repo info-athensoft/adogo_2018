@@ -7,37 +7,24 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.sql.DataSource;
 
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.adogo.advertiser.entity.booth.Booth;
+import com.adogo.base.dao.BaseDaoJdbcImpl;
 
 @Repository
 @Qualifier("boothDaoJdbcImpl")
-public class BoothDaoJdbcImpl implements BoothDao {
+public class BoothDaoJdbcImpl extends BaseDaoJdbcImpl implements BoothDao {
 
 	private final static Logger logger = Logger.getLogger(BoothDaoJdbcImpl.class);
 	
 	private final String TABLE = "BOOTHS";
-	
-	private NamedParameterJdbcTemplate jdbc;
-
-	/**
-	 * inject DataSource object
-	 * @param dataSource
-	 */
-	@Autowired
-	public void setDataSource(DataSource dataSource){
-		this.jdbc = new NamedParameterJdbcTemplate(dataSource);
-	}
 	
 	@Override
 	public List<Booth> findAll() {

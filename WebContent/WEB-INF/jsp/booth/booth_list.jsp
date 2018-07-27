@@ -144,7 +144,7 @@
                                                         <div class="listing-avatar"><a href="author-single.html"><img src="/images/avatar/1.jpg" alt=""></a>
                                                             <span class="avatar-tooltip">Added By  <strong>Adam Koncy</strong></span>
                                                         </div>
-                                                        <h3><a href="listing-single.html">Luxury Restourant</a></h3>
+                                                        <h3><a href="/test/booth/style/1">Luxury Restourant</a></h3>
                                                         <p>Sed non neque elit. Sed ut imperdie.</p>
                                                         <div class="geodir-category-options fl-wrap">
                                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5">

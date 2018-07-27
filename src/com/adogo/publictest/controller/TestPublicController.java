@@ -22,15 +22,7 @@ public class TestPublicController {
 		return "index";
 	}
 	
-	@RequestMapping("/booth/list")
-	public String goBoothList(){
-		return "booth/booth_list";
-	}
 	
-	@RequestMapping("/booth/style/{styleNo}")
-	public String goBoothStyle1(@PathVariable int styleNo){
-		return "booth/booth_style_"+styleNo;
-	}
 	
 	@RequestMapping("/category/list")
 	public String goCategoryList(){

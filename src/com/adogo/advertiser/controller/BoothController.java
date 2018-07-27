@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -52,6 +53,22 @@ public class BoothController {
 	public void setLanguageMap(LanguageMap langMapObj){
 		this.langMapObj = langMapObj;
 	} */
+	
+	
+	
+	@RequestMapping("/list")
+	public String goBoothList(){
+		return "booth/booth_list";
+	}
+	
+	@RequestMapping("/style/{styleNo}")
+	public String goBoothStyle1(@PathVariable int styleNo){
+		return "booth/booth_style_"+styleNo;
+	}
+	
+	
+	
+	
 	
 	/**
 	 * goto the page of booth index
