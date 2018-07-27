@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!-- global variables settings -->
-<c:set var="webapp_name" value="/"/>
+<c:set var="webapp_name" value=""/>
 <!-- END global variables settings -->
 
 <!-- page variables  -->

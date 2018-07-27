@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!-- global variables settings -->
-<c:set var="webapp_name" value="/"/>
+<c:set var="webapp_name" value=""/>
 <!-- END global variables settings -->
 
 <!-- page variables  -->
@@ -47,7 +47,7 @@
                     <!--  section  end--> 
                     <!--  section  --> 
                     <section class="parallax-section" data-scrollax-parent="true">
-                        <div class="bg par-elem "  data-bg="images/bg/1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                        <div class="bg par-elem "  data-bg="/images/bg/1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
                         <div class="overlay"></div>
                         <div class="container">
                             <div class="section-title center-align">

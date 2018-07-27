@@ -19,49 +19,28 @@ import com.adogo.advertiser.entity.business.BusinessHours;
 
 @Service
 public class BoothService {
-	private BoothDao boothDao;
-	private BoothImageDao boothImageDao;
-	private BusinessHoursDao businessHoursDao;
-	private BoothTextDao boothTextDao;
-	
-	private BoothImageService boothImageService;
-	
-	@Autowired
-	public void setBoothImageService(BoothImageService boothImageService) {
-		this.boothImageService = boothImageService;
-	}
-	
-	private BoothTextService boothTextService;
-	
-	@Autowired
-	public void setBoothTextService(BoothTextService boothTextService) {
-		this.boothTextService = boothTextService;
-	}
-
 	@Autowired
 	@Qualifier("boothDaoJdbcImpl")
-	public void setBoothDao(BoothDao boothDao) {
-		this.boothDao = boothDao;
-	}
-
+	private BoothDao boothDao;
+	
 	@Autowired
 	@Qualifier("boothImageDaoJdbcImpl")
-	public void setBoothImageDao(BoothImageDao boothImageDao) {
-		this.boothImageDao = boothImageDao;
-	}
-
+	private BoothImageDao boothImageDao;
+	
 	@Autowired
 	@Qualifier("businessHoursDaoJdbcImpl")
-	public void setBusinessHoursDao(BusinessHoursDao businessHoursDao) {
-		this.businessHoursDao = businessHoursDao;
-	}
+	private BusinessHoursDao businessHoursDao;
 	
 	@Autowired
 	@Qualifier("boothTextDaoJdbcImpl")
-	public void setBoothTextDao(BoothTextDao boothTextDao) {
-		this.boothTextDao = boothTextDao;
-	}
-
+	private BoothTextDao boothTextDao;
+	
+	@Autowired
+	private BoothImageService boothImageService;
+	
+	@Autowired
+	private BoothTextService boothTextService;
+	
 	public List<Booth> getBoothByUserId(long userId){
 		return boothDao.findBoothByUserId(userId);
 	}
