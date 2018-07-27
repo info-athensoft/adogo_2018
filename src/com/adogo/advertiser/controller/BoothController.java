@@ -47,28 +47,14 @@ public class BoothController {
 	
 	@Autowired
 	private BoothService boothService;
-		
-	@Autowired
-	public void setBoothService(BoothService boothService) {
-		this.boothService = boothService;
-	}
-	
+
 	@Autowired
 	private BusinessProfileService businessProfileService;
-		
-	@Autowired
-	public void setBusinessProfileService(BusinessProfileService businessProfileService) {
-		this.businessProfileService = businessProfileService;
-	}
 
 	
 	@Autowired
 	private BusinessAddressService businessAddressService;
 		
-	@Autowired
-	public void setBusinessAddressService(BusinessAddressService businessAddressService) {
-		this.businessAddressService = businessAddressService;
-	}
 	
 /*	@Autowired
 	private LanguageMap langMapObj;
